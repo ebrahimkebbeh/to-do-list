@@ -1,0 +1,47 @@
+.container{
+    background-color: aqua;
+    text-align: center;
+}
+body{
+    background-color: aqua;
+}
+ul li{
+    list-style: none; 
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 38px;
+    border-radius: 50%;
+
+}
+
+ul li.checked{
+    color: brown;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: red;
+}
